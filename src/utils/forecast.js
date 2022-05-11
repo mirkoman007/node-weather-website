@@ -14,7 +14,7 @@ const forecast=(latitude,longitude,callback)=>{
         }
         else{
             const current=body.current
-            callback(undefined,`${current.weather_descriptions[0]}. It is currently ${current.temperature} defress out. It feels like ${current.feelslike} degress out.`)
+            callback(undefined,`${current.weather_descriptions[0]}. It is currently ${current.temperature} defress out. It feels like ${current.feelslike} degress out. UV Index is ${current.uv_index}.`)
 
         }
     })
